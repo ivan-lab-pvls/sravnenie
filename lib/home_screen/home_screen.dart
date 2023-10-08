@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           textAlign: TextAlign.center,
                           style: GoogleFonts.delaGothicOne(
                             color: const Color.fromARGB(255, 83, 83, 83),
-                            fontSize: 18,
+                            fontSize: 15,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -113,7 +113,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     },
                                     child: Container(
                                       height: 80,
-                                      width: 200,
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(20)),
@@ -124,18 +123,19 @@ class _MyHomePageState extends State<MyHomePage> {
                                             CrossAxisAlignment.center,
                                         children: [
                                           SizedBox(
-                                              height: 80,
-                                              width: 80,
+                                              height: 70,
+                                              width: 70,
                                               child: Image.network(image)),
                                           const SizedBox(
                                             width: 20,
                                           ),
                                           Text(
                                             bank['title']!,
+                                            maxLines: 2,
                                             style: GoogleFonts.delaGothicOne(
                                               color: const Color.fromARGB(
                                                   255, 83, 83, 83),
-                                              fontSize: 18,
+                                              fontSize: 15,
                                               fontWeight: FontWeight.w500,
                                             ),
                                           ),
